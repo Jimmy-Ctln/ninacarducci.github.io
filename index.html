@@ -11,18 +11,18 @@
 	<!-- Open Graph data for Facebook -->
 	<meta property="og:title" content="Nina à Travers l'Objectif : Galerie de Shootings"/>
 	<meta property="og:type" content="website"/>
-	<meta property="og:url" content="http://www.NinaCarducci.com/"/>
-	<meta property="og:image" content="http://www.NinaCarducci.com/nina-555x553.webp"/>
+	<meta property="og:url" content="https://www.NinaCarducci.com/"/>
+	<meta property="og:image" content="https://www.NinaCarducci.com/nina-555x553.webp"/>
 	<meta property="og:description" content="Découvrez ma galeries de shootings photos capturés lors de mariages, rendez-vous en entreprise, portrait et concert ! Explorez mes photos uniques et plongez-vous dans un monde d'émotion et de créativité." />
 	
 	<!-- Twitter Card data -->
 	<meta name="twitter:card" content="summary">
-	<meta name="twitter:site" content="@NinaCarducci">
+	<meta name="twitter:site" content="https://www.NinaCarducci.com">
 	<meta name="twitter:title" content="Nina à Travers l'Objectif : Galerie de Shootings">
 	<meta name="twitter:description" content="Découvrez ma galeries de shootings photos capturés d'événements incroyable ! Explorez mes photos uniques et plongez-vous dans un monde d'émotion et de créativité.">
 	<meta name="twitter:creator" content="@NinaCarducci">
 	<!-- Twitter Summary card images must be at least 200x200px -->
-	<meta name="twitter:image" content="http://www.NinaCarducci.com/nina-555x553.webp">	
+	<meta name="twitter:image" content="https://www.NinaCarducci.com/nina-555x553.webp">	
 	
 	<meta charset="UTF-8">
 	<title>Nina à Travers l'Objectif : Galerie de Shootings</title>
@@ -37,7 +37,7 @@
 				<li><a href="#gallery">Galerie</a></li>
 				<li><a href="#services">Service</a></li>
 				<li><a href="#contact">Contact</a></li>
-				<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram-40x40.webp" alt="logo instagram en petit"></a></li>
+				<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram/instagram-40x40.webp" alt="logo instagram en petit"></a></li>
 			</ul>
 		</nav>
 	</header>
@@ -51,14 +51,53 @@
 				</div>
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<img src="./assets/images/slider/ryoji-iwata-1903x880.webp" class="d-block" alt="un homme en costard cravate qui traverse un passage piéton en centre ville" width="1903" height="880">
+						<img src="./assets/images/slider/ryoji-iwata/ryoji-iwata-1903x880.webp" class="d-block" alt="un homme en costard cravate qui traverse un passage piéton en centre ville"
+						srcset="
+						./assets/images/slider/ryoji-iwata/ryoji-iwata-500x231.webp 500w,
+						./assets/images/slider/ryoji-iwata/ryoji-iwata-800x369.webp 800w,
+						./assets/images/slider/ryoji-iwata/ryoji-iwata-1200x554.webp 1200w,
+						./assets/images/slider/ryoji-iwata/ryoji-iwata-1903x880.webp 1903w,
+						"
+						sizes="
+						(max-width: 500px) 500px,
+						(max-width: 800px) 800px,
+						(max-width: 1000px) 1200px,
+						(max-width: 1440px) 1903px,
+						"
+						>
 					</div>
 					<div class="carousel-item">
-						<img src="./assets/images/slider/nicholas-green-1903x880.webp" class="d-block" alt="vu sur une foule en plein évévenement" width="1903" height="880">
+						<img src="./assets/images/slider/nicholas-green/nicholas-green-1903x880.webp" class="d-block" alt="vu sur une foule en plein évévenement"
+						srcset="
+						./assets/images/slider/nicholas-green/nicholas-green-500x231.webp 500w,
+						./assets/images/slider/nicholas-green/nicholas-green-800x369.webp 800w,
+						./assets/images/slider/nicholas-green/nicholas-green-1200x554.webp 1200w,
+						./assets/images/slider/nicholas-green/nicholas-green-1903x880.webp 1903w,
+						"
+						sizes="
+						(max-width: 500px) 500px,
+						(max-width: 800px) 800px,
+						(max-width: 1000px) 1200px,
+						(max-width: 1440px) 1903px,
+						"
+						>
 					</div>
 					<div class="carousel-item">
-						<img src="./assets/images/slider/edward-cisneros-1903x880.webp" class="d-block" alt="un homme qui embrasse une femme lors d'un mariage" width="1903" height="880">
-					</div>
+						<img src="./assets/images/slider/edward-cisneros/edward-cisneros-1903x880.webp" class="d-block" alt="un homme qui embrasse une femme lors d'un mariage"
+						srcset="
+							./assets/images/slider/edward-cisneros/edward-cisneros-500x231.webp 500w,
+							./assets/images/slider/edward-cisneros/edward-cisneros-800x370.webp 800w,
+							./assets/images/slider/edward-cisneros/edward-cisneros-1200x554.webp 1200w,
+							./assets/images/slider/edward-cisneros/edward-cisneros-1903x880.webp 1903w,
+						"
+						sizes="
+						(max-width: 500px) 500px,
+						(max-width: 800px) 800px,
+						(max-width: 1000px) 1200px,
+						(max-width: 1440px) 1903px,
+						"
+						>
+					</div> 
 				</div>
 				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
 					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -72,7 +111,17 @@
 		</section>
 		<section id="about">
 			<div class="picture left">
-				<img src="./assets/images/nina-555x553.webp" alt="photographie de nina">
+				<img src="/assets/images/nina/nina-600x598.webp" alt="photographie de nina"
+				srcset="
+				/assets/images/nina/nina-300x299.webp 300w,
+				/assets/images/nina/nina-600x598.webp 600w,
+				"
+
+				sizes="
+				(max-width: 575px) 300px,
+				(max-width: 1440px) 600px,
+				"
+				>
 			</div>
 			<div id="about-me">
 				<h2 class="about-me__title">A propos de moi</h2>
@@ -168,14 +217,22 @@
 					</form>
 				</div>
 			<div class="picture right">
-				<img src="./assets/images/camera-419x418.webp" alt="appareil photo vintage">
+				<img src="./assets/images/camera/camera-419x418.webp" alt="appareil photo vintage" width="419" height="100%"
+				srcset="
+				./assets/images/camera/camera-250x249.webp 250w,
+				./assets/images/camera/camera-419x418.webp 419w,
+				"
+				sizes="
+				(max-width: 560px) 250px,
+				(max-width: 1440px) 419px,
+				">
 			</div>
 		</div>
 	</footer>
-	<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
-	<script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script defer src="./assets/maugallery.js"></script>
-	<script defer src="./assets/scripts.js"></script>
+	<script defer src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script defer src="./assets/maugallery.min.js"></script>
+	<script defer src="./assets/script.min.js"></script>
 	<!-- using schema.org to improve local SEO -->
 	<script type="application/ld+json">
 		{
@@ -189,7 +246,7 @@
 				"postalCode": "33200",
 				"addressCountry": "France"
 			},
-				"telephone": "05-56-67-78-89",
+				"telephone": "0556677889",
 				"url": "www.NinaCarducci.com/",
 				"openingHoursSpecification": [
 			{
@@ -200,7 +257,7 @@
 			}
 		   ],
 		   	"image": "http://www.NinaCarducci.com/nina-555x553.webp",
-			"description": "Découvrez ma galeries de shootings photos capturés d'événements incroyable ! Explorez mes photos uniques et plongez-vous dans un monde d'émotion et de créativité."
+			"description": "Découvrez ma galeries de shootings photos capturés lors d'événements incroyable ! Explorez mes photos uniques et plongez-vous dans un monde d'émotion et de créativité."
 		}
 	</script>
 </body>
