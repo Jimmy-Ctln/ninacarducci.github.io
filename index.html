@@ -8,8 +8,8 @@
 	<link rel="stylesheet" href="./assets/style.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
-	
+	<link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Inter:wght@300;500;800&family=Spectral:ital,wght@0,300;0,500;0,800;1,500;1,800&display=swap" rel="stylesheet">
+
 	<!-- Open Graph data for Facebook -->
 	<meta property="og:title" content="Nina à Travers l'Objectif : Galerie de Shootings"/>
 	<meta property="og:type" content="website"/>
@@ -52,8 +52,42 @@
 					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
 				</div>
 				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<img src="./assets/images/slider/ryoji-iwata/ryoji-iwata-1903x880.webp" class="d-block" alt="un homme en costard cravate qui traverse un passage piéton en centre ville" width="1903" height="880"
+					<!-- <div class="carousel-item active"> -->
+					<picture class="carousel-item active">
+							<source
+								srcset="./assets/images/slider/ryoji-iwata/ryoji-iwata-500x231.webp"
+								media="(max-width: 500px)"
+							>
+							<source
+								srcset="./assets/images/slider/ryoji-iwata/ryoji-iwata-800x369.webp"
+								media="(max-width:800)"
+							>
+							<source
+								srcset="./assets/images/slider/ryoji-iwata/ryoji-iwata-1200x554.webp"
+								media="(max-width: 1200px)"
+							>
+							
+							<img src="./assets/images/slider/ryoji-iwata/ryoji-iwata-1903x880.webp" alt="">
+
+					</picture>
+					<picture class="carousel-item">
+						<source
+							srcset="./assets/images/slider/ryoji-iwata/ryoji-iwata-500x231.webp"
+							media="(max-width: 500px)"
+						>
+						<source
+							srcset="./assets/images/slider/ryoji-iwata/ryoji-iwata-800x369.webp"
+							media="(max-width:800)"
+						>
+						<source
+							srcset="./assets/images/slider/ryoji-iwata/ryoji-iwata-1200x554.webp"
+							media="(max-width: 1200px)"
+						>
+						
+						<img src="./assets/images/slider/ryoji-iwata/ryoji-iwata-1903x880.webp" alt="">
+
+					</picture>
+						<!-- <img src="./assets/images/slider/ryoji-iwata/ryoji-iwata-1903x880.webp" class="d-block" alt="un homme en costard cravate qui traverse un passage piéton en centre ville" width="1903" height="880"
 						srcset="
 						./assets/images/slider/ryoji-iwata/ryoji-iwata-500x231.webp 500w,
 						./assets/images/slider/ryoji-iwata/ryoji-iwata-800x369.webp 800w,
@@ -67,8 +101,8 @@
 						(max-width: 1440px) 1903px,
 						"
 						>
-					</div>
-					<div class="carousel-item">
+					</div> -->
+					<!-- <div class="carousel-item">
 						<img src="./assets/images/slider/nicholas-green/nicholas-green-1903x880.webp" class="d-block" alt="vu sur une foule en plein évévenement" width="1903" height="880"
 						srcset="
 						./assets/images/slider/nicholas-green/nicholas-green-500x231.webp 500w,
@@ -99,7 +133,7 @@
 						(max-width: 1440px) 1903px,
 						"
 						>
-					</div> 
+					</div>  -->
 				</div>
 				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
 					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -135,15 +169,15 @@
 			<h2 class="title">Portfolio</h2>
 			<div class="container py-3">
 				<div class="gallery" style="display: none">
-					<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-1000x1300.webp" alt="concert avec des lumière rouge" width="440" height="440"/>
-					<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-1000x1500.webp" alt="homme bien habbilé en costard croisant les bras" width="440" height="440"/>
-					<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-1000x676.webp" alt="femme souriante lors d'une réunion d'entreprise" width="440" height="440"/>
-					<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-1000x799.webp" alt="photo de plusieurs mains de membres d'une famille pendant un mariage" width="440" height="440"/>
-					<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-1000x1498.webp" alt="photo d'un homme fermant les yeux à cause du soleil" width="440" height="440"/>
-					<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-1000x1500.webp" alt="shooting des mariés lors d'un mariage" width="440" height="440"/>
-					<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg-1000x1502.webp" alt="photographie d'une femme lors d'un shooting" width="440" height="440"/>
-					<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-1000x666.webp" alt="photo d'un chanteur lors d'un concert" width="440" height="440"/>
-					<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-1000x672.webp" alt="femme souriante avec son ordinateur" width="440" height="440"/>
+					<img data-gallery-tag="Concert" loading="lazy" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-1000x1300.webp" alt="concert avec des lumière rouge" />
+					<img data-gallery-tag="Entreprises" loading="lazy" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-1000x1500.webp" alt="homme bien habbilé en costard croisant les bras" />
+					<img data-gallery-tag="Entreprises" loading="lazy" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-1000x676.webp" alt="femme souriante lors d'une réunion d'entreprise" />
+					<img data-gallery-tag="Mariages" loading="lazy" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-1000x799.webp" alt="photo de plusieurs mains de membres d'une famille pendant un mariage" />
+					<img data-gallery-tag="Portrait" loading="lazy" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-1000x1498.webp" alt="photo d'un homme fermant les yeux à cause du soleil"/>
+					<img data-gallery-tag="Mariages" loading="lazy" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-399x600.webp" alt="shooting des mariés lors d'un mariage"/>
+					<img data-gallery-tag="Portrait" loading="lazy" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg-1000x1502.webp" alt="photographie d'une femme lors d'un shooting" />
+					<img data-gallery-tag="Concert" loading="lazy" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-1000x666.webp" alt="photo d'un chanteur lors d'un concert" />
+					<img data-gallery-tag="Entreprises" loading="lazy" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-1000x672.webp" alt="femme souriante avec son ordinateur" />
 				</div>
 			</div>
 		</section>
