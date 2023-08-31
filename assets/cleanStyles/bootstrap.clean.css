@@ -253,7 +253,13 @@ textarea {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  @media (max-width: 1000px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
+
+
 
 .nav-link {
   display: block;
@@ -263,6 +269,10 @@ textarea {
     color 0.15s ease-in-out,
     background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out;
+    
+    @media (max-width: 1000px) {
+      text-align: center;
+    }
 }
 
 .carousel {

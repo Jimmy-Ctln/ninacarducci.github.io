@@ -5,6 +5,9 @@ body {
 * {
   font-family: "Inter";
   font-style: normal;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
 }
 .header {
   background-color: white;
@@ -30,9 +33,6 @@ body {
 }
 
 @media screen and (max-width: 500px) {
-  .nav ul {
-    flex-direction: column;
-  }
   .header {
     position: relative;
   }
@@ -94,18 +94,18 @@ a:hover {
 }
 .about-me__title {
   margin-top: 1em;
-  margin-bottom: 60px;
+  margin-bottom: 0.70em;
   font-size: 30px;
 }
 .about-me__introduction {
   font-family: "ADLaM Display", cursive;
   font-weight: 400;
   font-style: italic;
-  width: 60%;
+  font-size: 1.2em;
 }
 #about-me p {
   width: 80%;
-  font-size: 14px;
+  font-size: 1em;
 }
 
 .title {
@@ -223,6 +223,7 @@ a:hover {
 
 #contact .container {
   display: flex;
+  min-width: 50px;
 }
 .picture.right::before {
   content: " ";
@@ -341,7 +342,7 @@ input[type="submit"] {
   }
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 850px) {
   .header {
     flex-direction: column;
     padding-inline: 0;
@@ -381,17 +382,10 @@ input[type="submit"] {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 100%;
 }
-
-.info-title {
-  width: 10%;
-}
-
 .info-content {
   margin-bottom: 5px;
 }
-
 h4 {
   margin: 0;
   padding: 0;
