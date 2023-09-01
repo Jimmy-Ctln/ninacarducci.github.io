@@ -6,15 +6,17 @@
 	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="preload" href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Inter:wght@300;500;800&family=Spectral:ital,wght@0,300;0,500;0,800;1,500;1,800&display=swap" as="style" onload="this.rel='stylesheet'">
+	<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;800&display=swap" as="style" onload="this.rel='stylesheet'">
+	<link rel="preload" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,500;0,800;1,500;1,800&display=swap" as="style" onload="this.rel='stylesheet'">
+	<link rel="preload" href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" as="style" onload="this.rel='stylesheet'">
 	<!-- Title + description -->
 	<title>Nina à Travers l'Objectif | Galerie de Shootings</title>
 	<meta name="description" content="Découvrez ma galeries de shootings photos capturés lors de mariages, rendez-vous en entreprise, portrait et concert ! Explorez mes photos uniques et plongez-vous dans un monde d'émotion et de créativité.">
 	<!-- Icon -->
 	<link rel="icon" type="image/x-icon" href="./assets/icon/icon-32x32.webp">
 	<!-- Styles clean -->
-	<link rel="preload" href="./assets/cleanStyles/bootstrap.clean.css" as="style" onload="this.rel='stylesheet'"> 
-	<link rel="preload" href="./assets/cleanStyles/style.clean.css" as="style" onload="this.rel='stylesheet'">
+	<link rel="stylesheet" href="./assets/cleanStyles/bootstrap.min.clean.css"> 
+	<link rel="stylesheet" href="./assets/cleanStyles/style.min.clean.css">
 	<!-- Open Graph data for Facebook -->
 	<meta property="og:title" content="Nina à Travers l'Objectif : Galerie de Shootings"/>
 	<meta property="og:type" content="website"/>
@@ -62,15 +64,20 @@
 						<source
 							srcset="./assets/images/slider/ryoji-iwata/ryoji-iwata-500x231.webp"
 							media="(max-width: 500px)"
-							wid
+							width="500"
+							height="231"
 						>
 						<source
 							srcset="./assets/images/slider/ryoji-iwata/ryoji-iwata-800x369.webp"
 							media="(max-width:800px)"
+							width="800"
+							height="369"
 						>
 						<source
 							srcset="./assets/images/slider/ryoji-iwata/ryoji-iwata-1200x554.webp"
 							media="(max-width: 1200px)"
+							width="1200"
+							height="554"
 						>
 						
 						<img src="./assets/images/slider/ryoji-iwata/ryoji-iwata-1903x880.webp" alt="Un homme en costard cravate qui traverse un passage piéton en centre ville" width="1903" height="880">
@@ -81,14 +88,20 @@
 						<source
 							srcset="./assets/images/slider/nicholas-green/nicholas-green-500x231.webp"
 							media="(max-width: 500px)"
+							width="500"
+							height="231"
 						>
 						<source
 							srcset="./assets/images/slider/nicholas-green/nicholas-green-800x369.webp"
 							media="(max-width:800px)"
+							width="800"
+							height="369"
 						>
 						<source
 							srcset="./assets/images/slider/nicholas-green/nicholas-green-1200x554.webp"
 							media="(max-width: 1200px)"
+							width="1200"
+							height="554"
 						>
 
 						<img src="./assets/images/slider/nicholas-green/nicholas-green-1903x880.webp" alt="Vu sur une foule qui s'ambiancent lors d'un événement" width="1903" height="880">
@@ -98,14 +111,20 @@
 						<source
 							srcset="./assets/images/slider/edward-cisneros/edward-cisneros-500x231.webp"
 							media="(max-width: 500px)"
+							width="500"
+							height="231"
 						>
 						<source
 							srcset="./assets/images/slider/edward-cisneros/edward-cisneros-800x370.webp"
 							media="(max-width:800px)"
+							width="800"
+							height="370"
 						>
 						<source
 							srcset="./assets/images/slider/edward-cisneros/edward-cisneros-1200x554.webp"
 							media="(max-width: 1200px)"
+							width="1200"
+							height="554"
 						>
 						
 						<img src="./assets/images/slider/edward-cisneros/edward-cisneros-1903x880.webp" alt="Deux personnes qui s'embrassent lors d'un mariage avec leur famille" width="1903" height="880">
@@ -124,7 +143,15 @@
 		</section>
 		<section id="about">
 			<div class="picture left">
-				<img src="./assets/images/nina/nina-640x638.webp" alt="photographie de nina" width="640" height="638">
+				<picture>
+					<source
+					srcset="./assets/images/nina/nina-400x398.webp"
+					media="(max-width: 730px)"
+					width="440"
+					height="398"
+					>
+					<img src="./assets/images/nina/nina-640x638.webp" alt="photographie de nina" width="640" height="638">
+				</picture>
 			</div>
 			<div id="about-me">
 				<h2 class="about-me__title">A propos de moi</h2>
@@ -143,7 +170,7 @@
 					<img data-gallery-tag="Mariages" loading="lazy" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-550x440.webp" alt="photo de plusieurs mains de membres d'une famille pendant un mariage" width="550" height="440"/>
 					<img data-gallery-tag="Portrait" loading="lazy" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-466x698.webp" alt="photo d'un homme fermant les yeux à cause du soleil" width="466" height="698"/>
 					<img data-gallery-tag="Mariages" loading="lazy" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-427x640.webp" alt="shooting des mariés lors d'un mariage" width="427" height="640"/>
-					<img data-gallery-tag="Portrait" loading="lazy" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg - 466x700.webp" alt="photographie d'une femme lors d'un shooting" width="466" height="700"/>
+					<img data-gallery-tag="Portrait" loading="lazy" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg-466x700.webp" alt="photographie d'une femme lors d'un shooting" width="466" height="700"/>
 					<img data-gallery-tag="Concert" loading="lazy" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-640x427.webp" alt="photo d'un chanteur lors d'un concert" width="640" height="427"/>
 					<img data-gallery-tag="Entreprises" loading="lazy" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-718x440.webp" alt="femme souriante avec son ordinateur" width="718" height="440"/>
 				</div>
@@ -235,6 +262,8 @@
 					<source
 						srcset="./assets/images/camera/camera-250x249.webp"
 						media="(max-width: 560px)"
+						width="250"
+						height="249"
 						>
 					<img src="./assets/images/camera/camera-419x418.webp" alt="appareil photo vintage" width="419" height="418" loading="lazy">
 				</picture>
@@ -242,8 +271,8 @@
 		</div>
 	</footer>
 	<!-- Script tag -->
-	<script defer src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
-	<script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
 	<script defer src="./assets/maugallery.min.js"></script>
 	<script defer src="./assets/script.min.js"></script>
 	
