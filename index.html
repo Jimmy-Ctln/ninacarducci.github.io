@@ -112,6 +112,32 @@
           class="carousel slide"
           data-bs-ride="carousel"
         >
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span
+              aria-label="Photo précédente"
+              class="carousel-control-prev-icon"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span
+              aria-label="Photo suivante"
+              class="carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Next</span>
+          </button>
           <div class="carousel-indicators">
             <button
               type="button"
@@ -240,24 +266,6 @@
               />
             </picture>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
       </section>
       <section id="about">
@@ -352,7 +360,7 @@
               loading="lazy"
               class="gallery-item"
               src="./assets/images/gallery/mariage/jakob-owens-427x640.webp"
-              alt="shooting des mariés lors d'un mariage"
+              alt="shooting de mariés lors d'un mariage"
               width="427"
               height="640"
             />
@@ -379,7 +387,7 @@
               loading="lazy"
               class="gallery-item"
               src="./assets/images/gallery/entreprise/mateus-campos-felipe-718x440.webp"
-              alt="femme souriante avec son ordinateur"
+              alt="femme souriante avec son ordinateur au travail"
               width="718"
               height="440"
             />
@@ -402,7 +410,7 @@
       <section id="services">
         <h2 class="title">Mes services</h2>
         <div class="container">
-          <div class="service">
+          <div class="service" tabindex="0">
             <div class="service__description">
               <h3>Shooting photo</h3>
               <p>
@@ -416,7 +424,7 @@
               <span>Matériel, déplacement inclus</span>
             </div>
           </div>
-          <div class="service">
+          <div class="service" tabindex="0">
             <div class="service__description">
               <h3>Retouches</h3>
               <p>
@@ -430,7 +438,7 @@
               <span>2 AR par photo</span>
             </div>
           </div>
-          <div class="service">
+          <div class="service" tabindex="0">
             <div class="service__description">
               <h3>Album photos</h3>
               <p>
