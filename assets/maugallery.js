@@ -220,10 +220,10 @@
     },
     showItemTags(gallery, position, tags) {
       var tagItems =
-        '<li class="nav-item"><span class="nav-link active active-tag"  data-images-toggle="all">Tous</span></li>';
+        '<li class="nav-item"><span class="nav-link active active-tag" tabindex="0" data-images-toggle="all">Tous</span></li>';
       $.each(tags, function(index, value) {
         tagItems += `<li class="nav-item active">
-                <span class="nav-link"  data-images-toggle="${value}">${value}</span></li>`;
+                <span class="nav-link" tabindex="0" data-images-toggle="${value}">${value}</span></li>`;
       });
       var tagsRow = `<ul class="my-4 tags-bar nav nav-pills">${tagItems}</ul>`;
 
@@ -234,6 +234,11 @@
       } else {
         console.error(`Unknown tags position: ${position}`);
       }
+      $('.nav-link').keypress(function(event) { 
+        if (event.which === 13 || event.keyCode === 13) {
+          $(this).click();
+        }
+      });
     },
     filterByTag() {
       if ($(this).hasClass("active-tag")) {
@@ -241,7 +246,7 @@
       }
       $(".active.active-tag").removeClass("active active-tag");
       $(this).addClass("active-tag active");
-
+      
       var tag = $(this).data("images-toggle");
 
       $(".gallery-item").each(function() {
